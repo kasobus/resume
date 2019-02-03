@@ -14,6 +14,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
+	<div class="container">
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'resume' ) ); ?>">
 				<?php
@@ -27,6 +28,7 @@
 				printf( esc_html__( 'Theme: %1$s by %2$s.', 'resume' ), 'resume', '<a href="http://KyleSobus.com">Kyle Sobus</a>' );
 				?>
 		</div><!-- .site-info -->
+</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

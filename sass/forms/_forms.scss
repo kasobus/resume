@@ -1,3 +1,13 @@
+.wp-block-ninja-forms-form {
+    max-width:600px;
+    margin: auto;
+    label {
+    font-family: Shadows into light;
+    }
+    .nf-form-fields-required {
+        display: none;
+    }
+}
 @import "buttons";
 
 @import "fields";

@@ -1,0 +1,11 @@
+.grid {
+    display: grid;
+    &.grid-projects {
+        border: 2px solid #CCC;
+        grid-gap: 10px;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, 100px);
+        justify-content: stretch;
+        align-content: stretch;
+    }
+}

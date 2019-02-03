@@ -15,16 +15,18 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Reem+Kufi|Shadows+Into+Light" rel="stylesheet">
+	<link rel="stylesheet" href="https://i.icomoon.io/public/4fa6f0ba1e/KylesWebsite/style-svg.css">
+	<script async defer src="https://i.icomoon.io/public/4fa6f0ba1e/KylesWebsite/svgxuse.js"></script>
 
 	<?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'resume' ); ?></a>
 
 	<header id="masthead" class="site-header">
+		<div class="container">
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
@@ -37,15 +39,14 @@
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php
 			endif;
-			$resume_description = get_bloginfo( 'description', 'display' );
-			if ( $resume_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $resume_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
+			?>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'resume' ); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+			<svg class="icon icon-menu" alt="MENU"><use xlink:href="#icon-menu"></use></svg>
+			<svg class="icon icon-x"><use xlink:href="#icon-x"></use></svg>
+		</button>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
@@ -53,6 +54,7 @@
 			) );
 			?>
 		</nav><!-- #site-navigation -->
+			</div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

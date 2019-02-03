@@ -1,0 +1,28 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "A wordpress theme for building a simple but elegant online resume.",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --watch",
+     "start": "webpack-dev-server --open",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "featherlight": "^1.7.13",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "css-loader": "^2.0.2",
+    "jshint": "^2.9.7",
+    "jshint-loader": "^0.8.4",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.14"
+  }
+}

@@ -17,7 +17,7 @@ textarea {
 	color: $color__text-input;
 	border: 1px solid $color__border-input;
 	border-radius: 3px;
-	padding: 3px;
+	padding: 10px;
 
 	&:focus {
 		color: $color__text-input-focus;
@@ -30,4 +30,16 @@ select {
 
 textarea {
 	width: 100%;
+}
+
+//Errors
+.nf-error-wrap.nf-error:empty {
+    height: 0;
+    opacity: 0;
+}
+
+.nf-error-wrap.nf-error {
+    transition: height 200ms ease, opacity 400ms ease;
+    opacity: 1;
+	font-size:.6rem;
 }
